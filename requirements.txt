@@ -1,0 +1,11 @@
+# Telegram Bot API
+python-telegram-bot==20.7
+
+# HTTP İstekleri için
+requests==2.31.0
+
+# JSON işlemleri (Python'da yerleşik ama belirtmekte fayda var)
+# json - yerleşik modül olduğu için gerekli değil
+
+# Dosya işlemleri (Python'da yerleşik)
+# os - yerleşik modül olduğu için gerekli değil
