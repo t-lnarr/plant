@@ -15,8 +15,8 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
-# Admin ID'lerini buraya ekle (Telegram User ID'n)
-ADMIN_IDS = os.getenv("ADMIN_IDS")  # Kendi Telegram ID'ni buraya yaz
+ADMIN_IDS_STR = os.getenv("ADMIN_IDS", "")
+ADMIN_IDS = [int(id.strip()) for id in ADMIN_IDS_STR.split(",") if id.strip()]
 
 # Veritabanı dosyaları
 USERS_FILE = "users_data.json"
